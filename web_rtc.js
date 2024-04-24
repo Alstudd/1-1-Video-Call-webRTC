@@ -1,4 +1,4 @@
-let APP_ID = "7160cc12b3684a5b9c166061bab42cad"
+let APP_ID = config.MY_KEY
 
 let token = null;
 let uid = String(Math.floor(Math.random() * 10000)); // use database id
@@ -11,7 +11,7 @@ let urlParams = new URLSearchParams(queryString)
 let roomId = urlParams.get('room')
 
 if (!roomId) {
-    window.location = 'web_rtc_lobby.html'
+    window.location = 'index.html'
 }
 
 let localStream;
